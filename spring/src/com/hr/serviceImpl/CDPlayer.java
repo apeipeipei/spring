@@ -7,16 +7,14 @@ import com.hr.service.MediaPlayer;
 
 @Component
 public class CDPlayer implements MediaPlayer {
-
-	@Autowired
 	private CompactDisc cd;
 
 	@Autowired
-	public CDPlayer(CompactDisc cd){
+	public void CompactDisc(CompactDisc cd){
 		this.cd = cd;
 	}
 	
-	public void play(CompactDisc cd) {
+	public void player() {
 		cd.play();
 	}
 

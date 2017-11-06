@@ -1,10 +1,11 @@
 package com.hr.serviceImpl;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.hr.service.CompactDisc;
 
-@Service
+@Component
 public class SgtPeppers implements CompactDisc {
 	private String title = "五环之歌";
 	private String artist = "岳云鹏";
